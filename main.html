@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>test</title>
+  <link rel="stylesheet" href="layout.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('images/bg3.png'); 
+      background-size: 15%;
+      background-repeat: repeat; 
+      background-position: top left;
+      height: 100vh; 
+    }
+  </style>
+</head>
+<body> 
+      <div class='layoutdiv'>
+        <header>
+          <span>
+            <img src="./images/house-solid.svg" alt="" width="15" />
+            <a href="./main.html" style="color: gold;">首頁</a>
+          </span>
+          <span>
+            <img src="/assets/icons/cube-solid.svg" alt="" width="15" />
+            <a href="./about.html">關於我們</a>
+          </span>
+          <span>
+            <img src="/assets/icons/github.svg" alt="" width="15" />
+            <a href="./info.html">最新消息</a>
+          </span>
+        </header>
+        <main>{loading ? <Loading/> : children}</main>
+        <footer>
+          <span>© 2024 speedcubing.top</span>
+        </footer>
+      </div>
+</body>
+</html>
